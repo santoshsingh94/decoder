@@ -8,9 +8,11 @@ def decode(numbers)
 	number.each do |numebr|
 		#Get the letterr that corresponds to this number.
 		letter=KEY[number]
+		if letter !=nil
 		#Add it onto the string.
-		text = letter
-	end
+		text += letter
+		end
+	end	
 	#return the decoded string.
 	return text
 end
